@@ -1,38 +1,80 @@
-.App {
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background: black;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  background: darkslategrey;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.podcast-list {
+  min-height: 80vh;
+  width: 100%;
+  display: grid;
+  background: whitesmoke;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.favorites {
+  min-height: 80vh;
+  width: 100%;
+  display: grid;
+  background: whitesmoke;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  size-adjust: inherit;
+  transition: all 0.3s ease;
+  margin: 20px;
+  border-style: outset;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img:hover {
+  transform: scale(1.1);
+}
+
+.podcast {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20px 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  padding: 10px;
+  background: darkslategrey;
+  color: whitesmoke;
+  width: 300px;
+  font-size: 20px;
+  border-radius: 5px;
 }
