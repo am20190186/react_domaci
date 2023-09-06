@@ -12,9 +12,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<PodcastList />}></Route>
-        <Route path="/podcast/:id" element={<PodcastDetails />}></Route>
-        <Route path="/favorites" element={<Favorites />}></Route>
+       <Route path="/" element={<PodcastList />}></Route>
+      <Route path="/favorites" element={<Favorites />}></Route>
       </Routes>
       <Footer />
     </div>

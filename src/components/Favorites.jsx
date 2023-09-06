@@ -28,7 +28,6 @@ const Favorites = () => {
             )) : (
                 <h1>You don't have any favorite podcasts yet!</h1>
             )}
-
         </div>
     )
 }
